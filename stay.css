@@ -1,0 +1,3689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+:root {
+    --white-bg: #fefffe;
+    --red-color: #fe0001;
+    --text-black: #201f1e;
+    --border-gray: #dddddc;
+    --text-gray: #818081;
+    --p-x: 0 99px;
+    --main-font: Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: var(--p-x);
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    width: 100%;
+    height: 53.5px;
+    display: flex;
+    padding: var(--p-x);
+    position: fixed;
+    z-index: 99;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(189, 189, 189);
+
+}
+
+nav #sect1 {
+    width: 40%;
+    height: 100%;
+
+
+    .ul {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        li {
+            list-style-type: none;
+            padding: 15px 18px;
+            transition: 0.3s;
+            position: relative;
+            .drop {
+                width: 100vw;
+                height: 0;
+                position: absolute;
+                overflow: hidden;
+                transition: 0.3s;
+                display: flex;
+                padding: var(--p-x);
+                top: 100%;
+                left: -80px;
+                
+                ul {
+                    width: calc(100% / 6);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        padding: 5px 0;
+
+                        a {
+                            font-weight: normal;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .li1 {
+                        padding: 15px 0;
+
+                        a {
+                            font-weight: bold;
+                        }
+                    }
+
+                    li:hover {
+                        background-color: transparent;
+
+                        a {
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        li:hover {
+            list-style-type: none;
+            padding: 15px 18px;
+            transition: 0.2s;
+            position: relative;
+            .drop {
+                width: 100vw;
+                height: 600px;
+                position: absolute;
+                overflow: hidden;
+                background-color: #ffffff;
+                transition: 0.3s;
+                display: flex;
+                box-shadow: 1px 2px 2px rgba(125, 125, 125, 0.837);
+                padding: var(--p-x);
+                top: 100%;
+                left: -80px;
+
+
+                ul {
+                    width: calc(100% / 6);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        padding: 5px 0;
+
+                        a {
+                            font-weight: normal;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .li1 {
+                        padding: 15px 0;
+
+                        a {
+                            font-weight: bold;
+                        }
+                    }
+
+                    li:hover {
+                        background-color: transparent;
+
+                        a {
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+            li:hover {
+                list-style-type: none;
+                padding: 15px 18px;
+                transition: 0.3s;
+                background-color: var(--border-gray);
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    li {
+        list-style-type: none;
+        padding: 15px 18px;
+        transition: 0.3s;
+        position: relative;
+        #drop2 {
+            width: 100vw;
+            height: 0;
+            position: absolute;
+            overflow: hidden;
+            transition: 0.3s;
+            display: flex;
+            padding: var(--p-x);
+            top: 100%;
+            left: -175px;
+            
+            ul {
+                width: calc(100% / 6);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    padding: 5px 0;
+
+                    a {
+                        font-weight: normal;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+
+                .li1 {
+                    padding: 15px 0;
+
+                    a {
+                        font-weight: bold;
+                    }
+                }
+
+                li:hover {
+                    background-color: transparent;
+
+                    a {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    li:hover {
+        list-style-type: none;
+        padding: 15px 18px;
+        transition: 0.2s;
+        position: relative;
+        #drop2 {
+            width: 100vw;
+            height: 500px;
+            position: absolute;
+            overflow: hidden;
+            background-color: #ffffff;
+            transition: 0.3s;
+            display: flex;
+            box-shadow: 1px 2px 2px rgba(125, 125, 125, 0.837);
+            padding: var(--p-x);
+            top: 100%;
+            left: -175px;
+
+
+            ul {
+                width: calc(100% / 6);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    padding: 5px 0;
+
+                    a {
+                        font-weight: normal;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+
+                .li1 {
+                    padding: 15px 0;
+
+                    a {
+                        font-weight: bold;
+                    }
+                }
+
+                li:hover {
+                    background-color: transparent;
+
+                    a {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        li:hover {
+            list-style-type: none;
+            padding: 15px 18px;
+            transition: 0.3s;
+            background-color: var(--border-gray);
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+    }
+    li {
+        list-style-type: none;
+        padding: 15px 18px;
+        transition: 0.3s;
+        position: relative;
+        #drop3 {
+            width: 100vw;
+            height: 0;
+            position: absolute;
+            overflow: hidden;
+            transition: 0.3s;
+            display: flex;
+            padding: var(--p-x);
+            top: 100%;
+            left: -245px;
+            
+            ul {
+                width: calc(100% / 6);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    padding: 5px 0;
+
+                    a {
+                        font-weight: normal;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+
+                .li1 {
+                    padding: 15px 0;
+
+                    a {
+                        font-weight: bold;
+                    }
+                }
+
+                li:hover {
+                    background-color: transparent;
+
+                    a {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    li:hover {
+        list-style-type: none;
+        padding: 15px 18px;
+        transition: 0.2s;
+        position: relative;
+        #drop3 {
+            width: 100vw;
+            height: 300px;
+            position: absolute;
+            overflow: hidden;
+            background-color: #ffffff;
+            transition: 0.3s;
+            display: flex;
+            box-shadow: 1px 2px 2px rgba(125, 125, 125, 0.837);
+            padding: var(--p-x);
+            top: 100%;
+            left: -245px;
+
+
+            ul {
+                width: calc(100% / 6);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    padding: 5px 0;
+
+                    a {
+                        font-weight: normal;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+
+                .li1 {
+                    padding: 15px 0;
+
+                    a {
+                        font-weight: bold;
+                    }
+                }
+
+                li:hover {
+                    background-color: transparent;
+
+                    a {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        li:hover {
+            list-style-type: none;
+            padding: 15px 18px;
+            transition: 0.3s;
+            background-color: var(--border-gray);
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+    }
+    li {
+        list-style-type: none;
+        padding: 15px 18px;
+        transition: 0.3s;
+        position: relative;
+        #drop4 {
+            width: 100vw;
+            height: 0;
+            position: absolute;
+            overflow: hidden;
+            transition: 0.3s;
+            display: flex;
+            padding: var(--p-x);
+            top: 100%;
+            left: -323px;
+            
+            ul {
+                width: calc(100% / 6);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    padding: 5px 0;
+
+                    a {
+                        font-weight: normal;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+
+                .li1 {
+                    padding: 15px 0;
+
+                    a {
+                        font-weight: bold;
+                    }
+                }
+
+                li:hover {
+                    background-color: transparent;
+
+                    a {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    li:hover {
+        list-style-type: none;
+        padding: 15px 18px;
+        transition: 0.2s;
+        position: relative;
+        #drop4 {
+            width: 100vw;
+            height: 400px;
+            position: absolute;
+            overflow: hidden;
+            background-color: #ffffff;
+            transition: 0.3s;
+            display: flex;
+            box-shadow: 1px 2px 2px rgba(125, 125, 125, 0.837);
+            padding: var(--p-x);
+            top: 100%;
+            left: -323px;
+
+
+            ul {
+                width: calc(100% / 6);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    padding: 5px 0;
+
+                    a {
+                        font-weight: normal;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+
+                .li1 {
+                    padding: 15px 0;
+
+                    a {
+                        font-weight: bold;
+                    }
+                }
+
+                li:hover {
+                    background-color: transparent;
+
+                    a {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        li:hover {
+            list-style-type: none;
+            padding: 15px 18px;
+            transition: 0.3s;
+            background-color: var(--border-gray);
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+nav #sect2 {
+    width: 20%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+    img {
+        width: 140px;
+        cursor: pointer;
+    }
+}
+
+nav #sect3 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    form {
+        width: 170px;
+        height: 38px;
+        position: relative;
+
+        input[type="search"] {
+            width: 100%;
+            height: 100%;
+            padding: 1px 40px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid rgb(53, 53, 53);
+            outline: none;
+
+        }
+
+        i {
+            position: absolute;
+            left: 15px;
+            top: 30%;
+            font-size: 15px;
+        }
+
+        input:hover[type="search"] {
+            width: 100%;
+            height: 100%;
+            padding: 1px 40px;
+            cursor: pointer;
+            transition: 0.3s;
+            background-color: var(--border-gray);
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid rgb(53, 53, 53);
+            outline: none;
+
+        }
+    }
+
+    ul {
+        width: calc(100% - 170px);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        li {
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+            height: calc(100% -5px);
+            list-style-type: none;
+            text-transform: uppercase;
+
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                color: #201f1e;
+                font-weight: 600;
+                position: relative;
+            }
+
+            .bage {
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: #fe0001;
+                top: -10px;
+                left: 10px;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+
+                p {
+                    color: var(--white-bg);
+                }
+            }
+
+            i {
+                font-size: 18px;
+            }
+        }
+
+        li:hover {
+            height: calc(100% -5px);
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+            background-color: var(--border-gray);
+            list-style-type: none;
+            text-transform: uppercase;
+        }
+
+    }
+
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding: var(--p-x);
+
+    #sect1 {
+        width: 100%;
+        height: 670px;
+        background-image: url("https://zandokh.com/image/catalog/banner/2025/ZANDO/Jan/CNY/SALE BANNER/ZANDO.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 80;
+    }
+
+    form {
+        width: 360px;
+        height: auto;
+        top: 80%;
+        left: 475px;
+        position: absolute;
+
+        #button1 {
+            width: 200px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            border: 3px solid rgb(158, 134, 0);
+            color: rgb(158, 134, 0);
+            transition: 0.5s;
+            text-transform: uppercase;
+            border-radius: 5px;
+
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            border: 3px solid rgb(158, 134, 0);
+            color: rgb(158, 134, 0);
+            transition: 0.5s;
+            text-transform: uppercase;
+            border-radius: 5px;
+
+        }
+
+        #button1:hover {
+            width: 200px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 20px;
+            font-weight: 700;
+            border: 3px solid rgb(158, 134, 0);
+            color: rgb(158, 134, 0);
+            transition: 0.5s;
+            box-shadow: 0 0 0 black;
+            transform: translateY(-8px);
+            text-transform: uppercase;
+            border-radius: 5px;
+
+        }
+
+        button:hover {
+            width: 150px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 20px;
+            font-weight: 700;
+            border: 3px solid rgb(158, 134, 0);
+            color: rgb(158, 134, 0);
+            transition: 0.5s;
+            transform: translateY(-8px);
+            text-transform: uppercase;
+            border-radius: 5px;
+
+        }
+    }
+}
+
+main #sect2 {
+    width: 100%;
+    height: 170px;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    img {
+        width: 160px;
+        cursor: pointer;
+    }
+}
+
+main #sect {
+
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+
+    .navbar1 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .navbar2 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .navbar3 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+
+main #sect3 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+
+    .navbar1 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .navbar2 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .navbar3 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+
+main #sect4 {
+    width: 100%;
+    height: 600px;
+    margin: 90px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .navbar1 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .navbar2 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .navbar3 {
+        width: 400px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+
+main #sect5 {
+    width: 100%;
+    height: 650px;
+
+    .div1 {
+        width: 100%;
+        height: 10px;
+        margin: 0 0 30px 0;
+        display: flex;
+        align-items: center;
+
+        .div3 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-size: 30px;
+            }
+
+        }
+
+        .div4 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            p {
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    /* scroll */
+    .back {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        .scroll {
+            width: calc(330px * 12);
+            height: 100%;
+            display: flex;
+
+            .card1 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 120px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 380px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card2 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card3 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card4 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card5 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+
+            }
+
+            .card6 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+
+            }
+
+            .card7 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                p {
+                    color: #000000;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+
+                }
+            }
+
+            .card8 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 120px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 380px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+
+                p {
+                    color: #000000;
+                    margin-top: 10px;
+                    font-weight: 700;
+                }
+
+            }
+
+            .card9 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card10 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(255, 255, 255);
+                    border: 1px solid rgb(56, 56, 56);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card11 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                p {
+                    color: #000000;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(255, 255, 255);
+                    border: 1px solid rgb(0, 0, 0);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card12 {
+                width: 310px;
+                height: 100%;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(255, 255, 255);
+                    border: 1px solid rgb(0, 0, 0);
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+main #sect6 {
+    width: 100%;
+    height: 650px;
+    padding: 40px 0;
+
+    .div1 {
+        width: 100%;
+        height: 10px;
+        margin: 0 0 30px 0;
+        display: flex;
+        align-items: center;
+
+        .div3 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-size: 30px;
+            }
+
+        }
+
+        .div4 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            p {
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    /* scroll */
+    .back {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        .scroll {
+            width: calc(330px * 12);
+            height: 100%;
+            display: flex;
+
+            .card1 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card2 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                p {
+                    color: #000000;
+                    margin-top: 10px;
+                    font-weight: 700;
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card3 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                p {
+                    color: #000000;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card4 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                p {
+                    color: #000000;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(0, 0, 0);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card5 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                p {
+                    color: #000000;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                }
+
+            }
+
+            .card6 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(255, 255, 255);
+                    border: 1px solid rgb(0, 0, 0);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+
+            }
+
+            .card7 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button2 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(200, 212, 29);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+
+            .card8 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(11, 20, 187);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button2 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(171, 195, 16);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+        }
+    }
+}
+
+main #sect7 {
+    width: 100%;
+    height: 650px;
+    padding: 40px 0;
+
+    .div1 {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        .div3 {
+            width: 50%;
+            height: 100%;
+            align-items: center;
+
+
+            h1 {
+                font-size: 30px;
+                margin: 0 0 10px 0;
+            }
+
+        }
+
+        .div4 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            p {
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    /* scroll */
+    .back {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        .scroll {
+            width: calc(310px * 12);
+            height: 100%;
+            display: flex;
+
+            .card1 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button2 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(218, 201, 18);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button3 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(32, 184, 123);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card2 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card3 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card4 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+
+            .card5 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(189, 20, 161);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(195, 13, 13);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(16, 133, 201);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+
+            .card6 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card7 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card8 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card9 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card10 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card11 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+
+            .card12 {
+                width: 310px;
+                height: 100%;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(0, 0, 0);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+main #sect8 {
+    width: 100%;
+    height: 650px;
+    padding: 40px 0;
+
+    .div1 {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        .div3 {
+            width: 50%;
+            height: 100%;
+            align-items: center;
+
+
+            h1 {
+                font-size: 30px;
+                margin: 0 0 10px 0;
+            }
+
+        }
+
+        .div4 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            p {
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .back {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        .scroll {
+            width: calc(330px * 12);
+            height: 100%;
+            display: flex;
+
+            .card1 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card2 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+
+            .card3 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card4 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(0, 0, 0);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card5 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+
+            .card6 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(181, 245, 18);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+
+            .card7 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+
+            .card8 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card9 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(200, 16, 16);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button2 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(25, 192, 72);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button3 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(24, 164, 180);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .card10 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .card11 {
+                width: 310px;
+                height: 100%;
+                margin: 0 30px 0 0;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                /* #button {
+                    width: 18px;
+                    height: 18px;
+                    background-color: var(--red-color);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                }
+
+                #button1 {
+                    width: 18px;
+                    height: 18px;
+                    background-color: rgb(143, 143, 143);
+                    border: 1px solid rgb(255, 255, 255);
+                    outline: none;
+                    border-radius: 5px;
+                } */
+
+            }
+
+            .card12 {
+                width: 310px;
+                height: 100%;
+                position: relative;
+
+                #p {
+                    width: 110px;
+                    height: auto;
+                    font-size: 15px;
+                    color: #000000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 385px;
+                    left: 235px;
+                    transform: rotate(-90deg);
+                    font-weight: normal;
+                }
+
+                img {
+                    width: 310px;
+                    height: 465px;
+                    cursor: pointer;
+                }
+
+                .discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: #fe0001;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    del {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main #sect9 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+
+    .navbar {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+
+        .ul1 {
+            width: 15%;
+            height: 100%;
+
+            li {
+                list-style-type: none;
+                padding: 5px 0;
+
+                p{
+                    font-size: 15px ;
+                    padding:0 0 15px 0;
+                    font-weight: 700;
+                }
+
+                #img1 {
+                    width: 310px;
+                    height: 65px;
+                }
+            }
+        }
+        #ul2{
+            width: 10%;
+            height: 100%;
+
+            img{
+                width: 88px;
+                height: 88px;
+            }
+        }
+        #ul3{
+            width: 10%;
+            height: 100%;
+        }
+        #ul5{
+            width: 17%;
+            height: 100%;
+        }
+        #ul6{
+            width: 24%;
+            height: 100%;
+        }
+    }
+}
